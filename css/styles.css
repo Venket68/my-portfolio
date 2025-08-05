@@ -1,0 +1,731 @@
+/* Modern Minimal Portfolio Theme */
+:root {
+  --primary: #222b45;
+  --accent: #2563eb;
+  --bg: #f8fafc;
+  --white: #fff;
+  --gray: #e5e7eb;
+  --shadow: 0 2px 16px rgba(34,43,69,0.07);
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--primary);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--accent);
+  padding-left: 0.7rem;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.navbar {
+  background: var(--white) !important;
+  box-shadow: var(--shadow);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.08rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+.navbar-brand {
+  font-weight: 700;
+  color: var(--accent) !important;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+.nav-link {
+  color: var(--primary) !important;
+  margin-left: 1.2rem;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+.nav-link:hover, .nav-link.active {
+  color: var(--accent) !important;
+}
+
+#home {
+  background: var(--white);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: none;
+}
+#home h1 {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 1.2rem;
+}
+#home .lead {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+#scrollDownBtn {
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  box-shadow: var(--shadow);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+#scrollDownBtn:hover {
+  background: var(--primary);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+section {
+  position: relative;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#about, #skills, #projects, #contact {
+  background: var(--white);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  margin-bottom: 2.5rem;
+  padding: 2.5rem 2rem;
+}
+
+/* Profile Image Enhancements */
+.profile-img {
+  transition: transform 0.4s cubic-bezier(.77,0,.18,1), box-shadow 0.4s, border 0.4s;
+  border: 4px solid #2563eb;
+  box-shadow: 0 8px 32px rgba(37,99,235,0.18), 0 0 0 4px rgba(37,99,235,0.08);
+  background: linear-gradient(135deg, #fff 60%, #e0e7ff 100%);
+}
+.profile-img:hover {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 16px 48px rgba(37,99,235,0.25), 0 0 0 8px rgba(37,99,235,0.12);
+  border-color: #1e40af;
+}
+
+/* About Section Card Effect */
+#about {
+  background: var(--white);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(37,99,235,0.10);
+  margin-top: -60px;
+  z-index: 2;
+  padding: 3rem 2rem;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Stylish Font for Name and Tagline */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700&display=swap');
+.landing-name {
+  font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  color: var(--accent);
+  text-shadow: 0 4px 24px rgba(37,99,235,0.10);
+}
+.landing-tagline {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Landing Section Animated Gradient */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+#home {
+  background: linear-gradient(120deg, #2563eb 0%, #1a2238 100%);
+  background-size: 200% 200%;
+  animation: gradientBG 12s ease-in-out infinite;
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Landing section text always white */
+#home .landing-name, #home .landing-tagline { color: #fff !important; }
+
+/* Remove underline from CTA button */
+.cta-btn { text-decoration: none !important; }
+
+/* Call-to-action Button */
+.cta-btn {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  padding: 0.7rem 2.2rem;
+  border-radius: 24px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(37,99,235,0.13);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  border: none;
+}
+.cta-btn:hover {
+  background: #1e40af;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(37,99,235,0.18);
+}
+
+/* Project Card Overlay and Animation */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card .card-img-top {
+  transition: transform 0.4s cubic-bezier(.77,0,.18,1);
+}
+.project-card:hover .card-img-top {
+  transform: scale(1.08);
+}
+.project-card .card-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(37,99,235,0.80);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s;
+  font-size: 1.1rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+.project-card:hover .card-overlay {
+  opacity: 1;
+}
+
+/* Portfolio Website Project Card New Hover Style */
+.portfolio-hover {
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.portfolio-hover .portfolio-hover-style {
+  pointer-events: none;
+  opacity: 0;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(37,99,235,0.92);
+  color: #fff;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+.portfolio-hover:hover .portfolio-hover-style {
+  opacity: 1;
+  pointer-events: auto;
+}
+.portfolio-hover:hover {
+  box-shadow: 0 12px 40px rgba(37,99,235,0.25), 0 0 0 4px #2563eb;
+  transform: scale(1.04) translateY(-6px);
+}
+
+/* Animate project cards on entrance */
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s cubic-bezier(.77,0,.18,1), transform 0.6s cubic-bezier(.77,0,.18,1);
+}
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: none;
+}
+
+.btn-outline-primary, .btn-primary {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  border-radius: 18px;
+  padding: 0.5rem 1.5rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+}
+.btn-outline-primary {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--white);
+}
+.btn-outline-primary:hover {
+  background: var(--accent);
+  color: var(--white);
+  border-color: var(--accent);
+}
+.btn-primary {
+  background: var(--accent);
+  border: none;
+  color: var(--white);
+}
+.btn-primary:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+#skills .progress {
+  height: 1.2rem;
+  background: var(--gray);
+  border-radius: 8px;
+  box-shadow: none;
+}
+#skills .progress-bar {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  background: var(--accent);
+  color: var(--white);
+  border-radius: 8px;
+  transition: width 1s cubic-bezier(.77,0,.18,1);
+}
+
+.project-card {
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+  border: none;
+  background: var(--white);
+}
+.project-card:hover {
+  transform: scale(1.03) translateY(-4px);
+  box-shadow: 0 8px 32px rgba(37,99,235,0.13);
+}
+.card-title {
+  color: var(--primary);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+.card-text {
+  color: #444;
+}
+.badge {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-size: 0.9rem;
+  margin-right: 0.25rem;
+  background: var(--gray);
+  color: var(--primary);
+  border-radius: 6px;
+  padding: 0.3em 0.7em;
+}
+
+#contact .form-control {
+  border-radius: 8px;
+  border: 1px solid var(--gray);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.08rem;
+}
+#contact .form-label {
+  font-weight: 600;
+  color: var(--primary);
+}
+#formMessage {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.1rem;
+}
+
+.fab {
+  color: var(--accent);
+  transition: color 0.2s, transform 0.2s;
+}
+.fab:hover {
+  color: var(--primary);
+  transform: scale(1.15);
+}
+
+/* --- Modern Skills Grid --- */
+#skills .skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 2rem;
+}
+.skill-card {
+  background: var(--bg);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem 1.2rem;
+  min-width: 120px;
+  max-width: 160px;
+  flex: 1 1 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: none;
+}
+.skill-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(37,99,235,0.13);
+}
+.skill-icon {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+  transition: color 0.2s;
+}
+.skill-card:hover .skill-icon {
+  color: var(--primary);
+}
+.skill-label {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+.skill-level {
+  font-size: 0.95rem;
+  color: #666;
+  text-align: center;
+}
+
+/* Larger skill cards and more spacing */
+.skills-grid {
+  gap: 2.5rem;
+}
+.skill-card {
+  min-width: 180px !important;
+  max-width: 220px !important;
+  padding: 2.2rem 1.2rem;
+  font-size: 1.15rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive Skills Grid */
+@media (max-width: 992px) {
+  #skills .skills-grid {
+    gap: 1.2rem;
+  }
+  .skill-card {
+    min-width: 100px;
+    max-width: 120px;
+    padding: 1rem 0.5rem;
+  }
+}
+@media (max-width: 576px) {
+  #skills .skills-grid {
+    gap: 0.7rem;
+  }
+  .skill-card {
+    min-width: 80px;
+    max-width: 100px;
+    padding: 0.7rem 0.2rem;
+  }
+  .skill-icon {
+    font-size: 1.5rem;
+  }
+}
+
+/* Projects grid: 3 per row on desktop */
+#projects .row.g-4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem 0;
+  justify-content: center;
+}
+#projects .col-md-6.col-lg-4 {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  display: flex;
+  align-items: stretch;
+}
+@media (max-width: 992px) {
+  #projects .col-md-6.col-lg-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  #projects .col-md-6.col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Overlay animation: fade-in and scale */
+.project-card .card-overlay, .portfolio-hover .portfolio-hover-style {
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0.98);
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(37,99,235,0.85);
+  color: #fff;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.35s cubic-bezier(.77,0,.18,1), transform 0.35s cubic-bezier(.77,0,.18,1);
+  z-index: 2;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 1.1rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+.project-card:hover .card-overlay, .portfolio-hover:hover .portfolio-hover-style {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1.04);
+}
+.project-card:hover .card-body, .portfolio-hover:hover .card-body {
+  opacity: 0;
+  pointer-events: none;
+}
+.project-actions-overlay {
+  margin-top: 1.2rem;
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  z-index: 3;
+}
+.project-actions-overlay a {
+  pointer-events: auto;
+  position: relative;
+  z-index: 4;
+}
+
+/* Contact Section Alignment */
+#contact .container {
+  display: flex;
+  justify-content: center;
+}
+#contact .row.justify-content-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#contact .col-md-6 {
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(37,99,235,0.10);
+  padding: 2.5rem 2rem;
+}
+body.dark-theme #contact .col-md-6 {
+  background: #23272f;
+}
+@media (max-width: 576px) {
+  #contact .col-md-6 {
+    padding: 1.2rem 0.5rem;
+  }
+}
+#contact .col-md-8 {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(37,99,235,0.10);
+  padding: 2.5rem 2rem;
+}
+body.dark-theme #contact .col-md-8 {
+  background: #23272f;
+}
+@media (max-width: 576px) {
+  #contact .col-md-8 {
+    padding: 1.2rem 0.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 98vw;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+}
+@media (max-width: 992px) {
+  h2 {
+    font-size: 1.3rem;
+    padding-left: 0.5rem;
+  }
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+  #about, #skills, #projects, #contact {
+    padding: 1.5rem 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 2rem;
+  }
+  section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .profile-img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .project-card {
+    margin-bottom: 1.2rem;
+  }
+  .navbar {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+}
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .navbar-brand {
+    font-size: 0.9rem;
+  }
+  .profile-img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  .btn, .btn-outline-primary, .btn-primary {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* --- Dark Theme Styles --- */
+body.dark-theme {
+  background: #181a1b;
+  color: #f3f4f6;
+}
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
+  color: #fff;
+}
+body.dark-theme .navbar,
+body.dark-theme #about,
+body.dark-theme #skills,
+body.dark-theme #projects,
+body.dark-theme #contact {
+  background: #23272f !important;
+  color: #f3f4f6;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+}
+body.dark-theme .navbar-brand,
+body.dark-theme .nav-link {
+  color: #f3f4f6 !important;
+}
+body.dark-theme .navbar {
+  border-bottom: 1px solid #23272f;
+}
+body.dark-theme .btn-primary {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+}
+body.dark-theme .btn-primary:hover {
+  background: #1e40af;
+  color: #fff;
+}
+body.dark-theme .btn-outline-primary {
+  color: #fff;
+  border-color: #2563eb;
+}
+body.dark-theme .btn-outline-primary:hover {
+  background: #2563eb;
+  color: #fff;
+}
+body.dark-theme .btn-outline-secondary {
+  color: #fff;
+  border-color: #555;
+}
+body.dark-theme .btn-outline-secondary:hover {
+  background: #555;
+  color: #fff;
+}
+body.dark-theme .card,
+body.dark-theme .project-card,
+body.dark-theme .skill-card {
+  background: #23272f;
+  color: #f3f4f6;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+  border: none;
+}
+body.dark-theme .card-title,
+body.dark-theme .card-text,
+body.dark-theme .skill-label,
+body.dark-theme .skill-level {
+  color: #f3f4f6;
+}
+body.dark-theme .badge {
+  background: #2563eb;
+  color: #fff;
+}
+body.dark-theme .form-control {
+  background: #181a1b;
+  color: #f3f4f6;
+  border: 1px solid #333;
+}
+body.dark-theme .form-label {
+  color: #f3f4f6;
+}
+body.dark-theme .fab,
+body.dark-theme .fa {
+  color: #f3f4f6;
+}
+body.dark-theme .fab:hover,
+body.dark-theme .fa:hover {
+  color: #2563eb;
+}
+body.dark-theme .text-muted {
+  color: #b0b3b8 !important;
+}
+body.dark-theme .bg-light {
+  background: #23272f !important;
+}
+body.dark-theme .shadow-sm {
+  box-shadow: 0 2px 16px rgba(0,0,0,0.25) !important;
+}
+body,
+body.dark-theme {
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Smooth theme transitions */
+body, body.dark-theme, .navbar, #about, #skills, #projects, #contact, .card, .project-card, .skill-card {
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, border 0.3s;
+}

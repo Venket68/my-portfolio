@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Venkat N | Portfolio</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">Venkat N</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button id="themeToggle" class="btn btn-outline-secondary ms-3" aria-label="Toggle dark mode">
+          <i class="fa fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Landing Section -->
+  <section id="home" class="vh-100 d-flex align-items-center justify-content-center text-center">
+    <div>
+      <h1 class="display-3 fw-bold landing-name" data-aos="fade-down" style="color: #fff;">Venkat N</h1>
+      <p class="lead landing-tagline" data-aos="fade-up" data-aos-delay="200" style="color: #fff;">
+        CSE graduate specializing in web development, e-commerce, and productivity tools.<br>
+        Explore my projects: portfolios, online stores, blogs, dashboards, and more each crafted with a passion for clean code and great design.
+      </p>
+      <a href="#projects" class="cta-btn" style="text-decoration: none;">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-5">
+    <div class="container" data-aos="fade-up">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img src="assets/images/93a2d911-76d0-46ca-8380-776c997101d9_upload_PhotoGrid.png" alt="Profile" class="rounded-circle profile-img" style="width:220px;height:220px;object-fit:cover;">
+        </div>
+        <div class="col-md-8">
+          <h2 class="fw-bold mb-3">About Me</h2>
+          <p>
+            Hi! I'm Venkat N, a Computer Science Engineering graduate with a passion for building modern, user-friendly web applications. I love turning ideas into interactive digital experiences—whether it's a dynamic e-commerce platform, a productivity tool, or a creative blog. My approach combines clean code, thoughtful design, and a drive to solve real-world problems. I enjoy learning new technologies, collaborating with others, and always strive to deliver solutions that are both beautiful and functional.
+          </p>
+          <a href="https://drive.google.com/file/d/1BDjbCDiIUUpfVpe5d0LrIHkll7hKFrOc/view?usp=drive_link" class="btn btn-outline-primary mt-3" download target="_blank">
+            <i class="fa fa-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-4 fw-bold">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card" style="min-width:180px;max-width:220px;">
+          <span class="skill-icon"><i class="fab fa-html5"></i></span>
+          <div class="skill-label">HTML5</div>
+          <div class="skill-level">Expert</div>
+        </div>
+        <div class="skill-card" style="min-width:180px;max-width:220px;">
+          <span class="skill-icon"><i class="fab fa-css3-alt"></i></span>
+          <div class="skill-label">CSS3</div>
+          <div class="skill-level">Advanced</div>
+        </div>
+        <div class="skill-card" style="min-width:180px;max-width:220px;">
+          <span class="skill-icon"><i class="fab fa-js-square"></i></span>
+          <div class="skill-label">JavaScript</div>
+          <div class="skill-level">Advanced</div>
+        </div>
+        <div class="skill-card" style="min-width:180px;max-width:220px;">
+          <span class="skill-icon"><i class="fab fa-bootstrap"></i></span>
+          <div class="skill-label">Bootstrap</div>
+          <div class="skill-level">Advanced</div>
+        </div>
+        <div class="skill-card" style="min-width:180px;max-width:220px;">
+          <span class="skill-icon"><i class="fab fa-python"></i></span>
+          <div class="skill-label">Python</div>
+          <div class="skill-level">Intermediate</div>
+        </div>
+        <div class="skill-card" style="min-width:180px;max-width:220px;">
+          <span class="skill-icon"><i class="fab fa-java"></i></span>
+          <div class="skill-label">Java</div>
+          <div class="skill-level">Intermediate</div>
+        </div>
+        <div class="skill-card" style="min-width:180px;max-width:220px;">
+          <span class="skill-icon"><i class="fab fa-php"></i></span>
+          <div class="skill-label">PHP</div>
+          <div class="skill-level">Intermediate</div>
+        </div>
+        <div class="skill-card" style="min-width:180px;max-width:220px;">
+          <span class="skill-icon"><i class="fab fa-git-alt"></i></span>
+          <div class="skill-label">Git</div>
+          <div class="skill-level">Advanced</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I Love Building Section -->
+  <section id="love-building" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-4 fw-bold">What I Love Building</h2>
+      <div class="row justify-content-center text-center">
+        <div class="col-6 col-md-3 mb-4">
+          <i class="fas fa-laptop-code fa-2x mb-2 text-primary"></i>
+          <div>Web Apps</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <i class="fas fa-shopping-cart fa-2x mb-2 text-primary"></i>
+          <div>E-commerce</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <i class="fas fa-chart-line fa-2x mb-2 text-primary"></i>
+          <div>Dashboards</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <i class="fas fa-blog fa-2x mb-2 text-primary"></i>
+          <div>Blogs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-4 fw-bold">Projects</h2>
+      <p class="text-center mb-5 text-muted" style="max-width: 700px; margin: 0 auto;">
+        Here are some of my favorite projects, showcasing my skills in web development, app design, and creative problem-solving. Click on any project to learn more or view the code on GitHub.
+      </p>
+     
+      <div class="row g-4">
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 project-card portfolio-hover">
+            <!-- <img src="assets/images/e-commerce-web-app.jpg" class="card-img-top"> -->
+            <div class="card-body">
+              <div class="project-icon mb-2 text-primary text-center"><i class="fas fa-shopping-cart fa-2x"></i></div>
+              <h5 class="card-title">E-commerce Web App</h5>
+              <p class="card-text">A full-featured e-commerce platform with product catalog, cart, and checkout. Built using React and Node.js.</p>
+              <p><span class="badge">React</span> <span class="badge">Node.js</span> <span class="badge">MongoDB</span></p>
+              <div class="project-actions">
+                <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                <a href="#" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+            <div class="card-overlay">
+              <div>
+                <strong>E-commerce Web App</strong><br>
+                Product catalog, cart, checkout.<br>
+                Tech: React, Node.js, MongoDB
+              </div>
+              <div class="project-actions-overlay">
+                <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                <a href="#" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 project-card portfolio-hover">
+            <!-- <img src="assets/images/blog-platform.jpg" class="card-img-top" > -->
+            <div class="card-body">
+              <div class="project-icon mb-2 text-primary text-center"><i class="fas fa-blog fa-2x"></i></div>
+              <h5 class="card-title">Blog Platform</h5>
+              <p class="card-text">A multi-user blog platform with markdown support, comments, and authentication. Built with Django and Bootstrap.</p>
+              <p><span class="badge">Django</span> <span class="badge">Bootstrap</span> <span class="badge">Python</span></p>
+              <div class="project-actions">
+                <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                <a href="#" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+            <div class="card-overlay">
+              <div>
+                <strong>Blog Platform</strong><br>
+                Markdown, comments, auth.<br>
+                Tech: Django, Bootstrap, Python
+              </div>
+              <div class="project-actions-overlay">
+                <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                <a href="#" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 project-card portfolio-hover">
+            <!-- <img src="assets/images/weather-dashboard.jpg" class="card-img-top"> -->
+            <div class="card-body">
+              <div class="project-icon mb-2 text-primary text-center"><i class="fas fa-cloud-sun fa-2x"></i></div>
+              <h5 class="card-title">Weather Dashboard</h5>
+              <p class="card-text">A real-time weather dashboard using OpenWeatherMap API. Features search, forecast, and animated icons.</p>
+              <p><span class="badge">JavaScript</span> <span class="badge">API</span> <span class="badge">Bootstrap</span></p>
+              <div class="project-actions">
+                <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                <a href="#" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+            <div class="card-overlay">
+              <div>
+                <strong>Weather Dashboard</strong><br>
+                Real-time weather, forecast.<br>
+                Tech: JavaScript, API, Bootstrap
+              </div>
+              <div class="project-actions-overlay">
+                <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                <a href="#" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 project-card portfolio-hover">
+            <!-- <img src="assets/images/task-manager.jpg" class="card-img-top" > -->
+            <div class="card-body">
+              <div class="project-icon mb-2 text-primary text-center"><i class="fas fa-tasks fa-2x"></i></div>
+              <h5 class="card-title">Task Manager</h5>
+              <p class="card-text">A productivity app to manage daily tasks with drag-and-drop, reminders, and progress tracking. Built with Vue.js.</p>
+              <p><span class="badge">Vue.js</span> <span class="badge">JavaScript</span> <span class="badge">CSS</span></p>
+              <div class="project-actions">
+                <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                <a href="#" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+            <div class="card-overlay">
+              <div>
+                <strong>Task Manager</strong><br>
+                Drag-and-drop, reminders.<br>
+                Tech: Vue.js, JavaScript, CSS
+              </div>
+              <div class="project-actions-overlay">
+                <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                <a href="#" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 project-card portfolio-hover">
+            <!--  <img src="assets/images/portfolio-redesign.jpg" class="card-img-top"> -->
+            <div class="card-body">
+              <div class="project-icon mb-2 text-primary text-center"><i class="fas fa-paint-brush fa-2x"></i></div>
+              <h5 class="card-title">Portfolio Redesign</h5>
+              <p class="card-text">A creative redesign of my portfolio with advanced animations and a unique layout. Built with HTML, CSS, and GSAP.</p>
+              <p><span class="badge">HTML</span> <span class="badge">CSS</span> <span class="badge">GSAP</span></p>
+              <div class="project-actions">
+                <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                <a href="#" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+            <div class="card-overlay">
+              <div>
+                <strong>Portfolio Redesign</strong><br>
+                Animations, unique layout.<br>
+                Tech: HTML, CSS, GSAP
+              </div>
+              <div class="project-actions-overlay">
+                <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                <a href="#" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-4 fw-bold">Contact</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form action="https://formspree.io/f/xpwlyraq" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required class="form-control mb-3">
+            <input type="email" name="email" placeholder="Your Email" required class="form-control mb-3">
+            <textarea name="message" placeholder="Your Message" required class="form-control mb-3"></textarea>
+            <button type="submit" class="btn btn-primary w-100">Send</button>
+          </form>
+          <div class="text-center mt-3" id="formMessage"></div>
+          <div class="text-center mt-4">
+            <a href="#" class="me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-github fa-2x"></i></a>
+            <!-- Add more social icons as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" class="btn btn-primary position-fixed" style="bottom: 32px; right: 32px; z-index: 999; display: none; border-radius: 50%; width: 48px; height: 48px;">
+    <i class="fa fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5 text-muted bg-light">
+    Last updated: <span id="lastUpdated"></span>
+  </footer>
+
+  <!-- Bootstrap JS, AOS JS, Custom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    // Theme toggle logic
+    const themeToggle = document.getElementById('themeToggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    function setTheme(dark) {
+      if (dark) {
+        document.body.classList.add('dark-theme');
+        themeToggle.innerHTML = '<i class="fa fa-sun"></i>';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.body.classList.remove('dark-theme');
+        themeToggle.innerHTML = '<i class="fa fa-moon"></i>';
+        localStorage.setItem('theme', 'light');
+      }
+    }
+    // Initial theme
+    const savedTheme = localStorage.getItem('theme');
+    setTheme(savedTheme === 'dark' || (!savedTheme && prefersDark));
+    themeToggle.addEventListener('click', () => {
+      setTheme(!document.body.classList.contains('dark-theme'));
+    });
+  </script>
+  <script>
+    // Scroll to Top Button Logic
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        scrollTopBtn.style.display = 'block';
+      } else {
+        scrollTopBtn.style.display = 'none';
+      }
+    });
+    scrollTopBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    // Last Updated Date
+    const lastUpdated = document.getElementById('lastUpdated');
+    if (lastUpdated) {
+      lastUpdated.textContent = new Date(document.lastModified).toLocaleDateString();
+    }
+  </script>
+</body>
+</html>
